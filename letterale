@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettera di presentazione - Alessandro La Torre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e6e9ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.5;
+            color: #2c3e4f;
+        }
+
+        /* Contenitore principale: simula un foglio A4 */
+        .letter-wrapper {
+            max-width: 820px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 50px 55px;
+            margin: 0 auto;
+        }
+
+        /* Intestazione con contatti (pulsanti di servizio, ma in versione testo) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 2px solid #3a6d8c;
+            padding-bottom: 18px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .name-title h1 {
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #1e3b4c;
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+
+        .name-title .sub {
+            font-size: 16px;
+            color: #4a6a7f;
+            font-weight: 300;
+            border-left: 3px solid #8aaec0;
+            padding-left: 12px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            color: #2f5b74;
+            background: #f0f5f8;
+            padding: 10px 16px;
+            border-radius: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-info span {
+            display: inline-block;
+            margin: 0 6px;
+        }
+
+        .contact-info a {
+            color: #1e4a66;
+            text-decoration: none;
+            border-bottom: 1px dotted #8aaec0;
+        }
+
+        /* Oggetto / Riferimento */
+        .reference {
+            margin-bottom: 28px;
+            font-size: 15px;
+            color: #3b5e72;
+        }
+
+        .ref-item {
+            margin-bottom: 4px;
+        }
+
+        .ref-label {
+            font-weight: 600;
+            color: #1e3b4c;
+            width: 70px;
+            display: inline-block;
+        }
+
+        /* Corpo della lettera */
+        .content {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 18px;
+        }
+
+        .content p.greeting {
+            font-size: 17px;
+            font-weight: 500;
+            color: #1d3f53;
+            margin-bottom: 22px;
+        }
+
+        .highlight-box {
+            background-color: #f2f7fa;
+            border-left: 5px solid #3a6d8c;
+            padding: 18px 22px;
+            margin: 28px 0;
+            font-style: normal;
+            border-radius: 0 8px 8px 0;
+            color: #1d3f53;
+            font-weight: 400;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 16.5px;
+        }
+
+        .closing {
+            margin-top: 32px;
+        }
+
+        .closing p {
+            margin-bottom: 6px;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+
+        .signature p {
+            margin-bottom: 4px;
+            font-weight: 400;
+        }
+
+        .name-sign {
+            font-size: 22px;
+            font-weight: 400;
+            color: #1e3b4c;
+            margin-top: 10px;
+            border-top: 1px solid #cbd8e2;
+            padding-top: 18px;
+            width: 250px;
+        }
+
+        /* footer discreto */
+        .footer-note {
+            margin-top: 35px;
+            font-size: 12px;
+            color: #8fafc1;
+            text-align: right;
+            border-top: 1px dashed #d0dee8;
+            padding-top: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .letter-wrapper {
+                padding: 30px 25px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .contact-info {
+                text-align: left;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-wrapper">
+        <!-- Intestazione con nome e contatti (placeholders, da personalizzare) -->
+        <div class="header">
+            <div class="name-title">
+                <h1>Alessandro La Torre</h1>
+                <div class="sub">Retail & Digital Operations · E‑commerce & AI</div>
+            </div>
+            <div class="contact-info">
+                <span>📧 alessandro.torrex@email.it</span><br>
+                <span>📞 +39 345 123 45 67</span><br>
+                <span>📍 Milano / Roma</span>
+            </div>
+        </div>
+
+        <!-- Destinatario e riferimento (inserire HR Azienda) -->
+        <div class="reference">
+            <div class="ref-item"><span class="ref-label">A:</span> Risorse Umane – [Nome Azienda]</div>
+            <div class="ref-item"><span class="ref-label">Oggetto:</span> Candidatura spontanea / Ruolo in ambito retail digitale & e‑commerce</div>
+            <div class="ref-item"><span class="ref-label">Data:</span> 26 marzo 2026</div>
+        </div>
+
+        <!-- Corpo della lettera (testo fornito, con lievi migliorie formali) -->
+        <div class="content">
+            <p class="greeting">Alla cortese attenzione,</p>
+
+            <p>ho maturato un percorso nel retail evoluto e nello sviluppo operativo di progetti digitali, con un focus crescente su e-commerce, automazioni e utilizzo pratico dell’AI nei processi aziendali.</p>
+
+            <p>La mia esperienza nasce nella gestione completa di punti vendita e team, dove ho sviluppato attenzione ai KPI, organizzazione delle attività, gestione dello stock e relazione con il cliente. In questo contesto, lo sviluppo e l’utilizzo di soluzioni e-commerce è diventato progressivamente centrale nel mio lavoro, come naturale estensione dei processi di vendita e gestione. Ho inoltre contribuito a strutturare e armonizzare i principali indicatori di performance della rete retail multimarca del gruppo di famiglia, favorendo l’allineamento tra PDV.</p>
+
+            <p>Negli anni ho affiancato a questa esperienza un lavoro strutturato su strumenti digitali, contenuti e workflow, con l’obiettivo di rendere più efficienti le attività e supportare le decisioni operative.</p>
+
+            <!-- Box in evidenza per la frase chiave -->
+            <div class="highlight-box">
+                <p><strong>In contesti operativi reali ho sviluppato e applicato soluzioni per migliorare la rotazione dello stock e semplificare i flussi di vendita, integrando canali fisici e digitali in modo coordinato.</strong></p>
+            </div>
+
+            <p>Seguo con particolare interesse l’evoluzione delle esperienze B2C, dove e-commerce, AI e mobile stanno ridefinendo l’interazione con il cliente: dalla personalizzazione dei contenuti ai nuovi modelli di clienteling digitale, fino all’integrazione tra piattaforme, app e ambienti conversazionali.</p>
+
+            <p>Mi interessa contribuire in contesti dove sia utile collegare visione e operatività: osservare i processi, individuare aree di miglioramento e collaborare alla costruzione di soluzioni sostenibili nel tempo, in dialogo con team diversi.</p>
+
+            <p>Sono abituato a lavorare con autonomia, adattarmi rapidamente a nuovi strumenti e mantenere un approccio concreto, orientato alla chiarezza e alla continuità del lavoro.</p>
+
+            <div class="closing">
+                <p>Resto a disposizione per un colloquio conoscitivo e per condividere più nel dettaglio il mio percorso.</p>
+            </div>
+        </div>
+
+        <!-- Firma e cordiali saluti -->
+        <div class="signature">
+            <p>Cordiali saluti,</p>
+            <p class="name-sign">Alessandro La Torre</p>
+        </div>
+
+        <!-- Nota per il pdf (discreta) -->
+        <div class="footer-note">
+            Lettera di presentazione – Alessandro La Torre
+        </div>
+    </div>
+</body>
+</html>
